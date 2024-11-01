@@ -1,0 +1,14 @@
+package views
+
+templ Home(name string, language string) {
+	
+	@Base("Coolapp", &language) {
+		<div>Hello, { name }, 
+		if language == "en" {
+			<p>{Locale.LocaleString(language, "headerMain")}</p>
+		} else {
+			<p>{Locale.LocaleString(language, "headerMain")}</p>
+		}
+		</div>
+	}
+}
