@@ -1,0 +1,30 @@
+{
+  "name": "struct",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \" vite build --watch \" \" templ generate --watch \" \" npx tailwindcss -i ./resources/css/style.css -o ./static/style.css --watch \""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.1",
+    "postcss": "^8.4.31",
+    "preline": "^2.5.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-go-template": "^0.0.15",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.6"
+  }
+}
